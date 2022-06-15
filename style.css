@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
 body{
     margin: auto 0;
 }
@@ -80,35 +86,68 @@ p{
 
 
 .container-cover{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
-    grid-template-rows: 1fr;
+    display: flex;
     margin-top: 4rem;
     margin-bottom: 5rem;
+    width: 100%;
 }
 
 .cover{
-    justify-self: start;
     margin-left: 10rem;
-    width: 35rem;
-    height: 25rem;
+    width: 50%;
+    height: 50%;
+    /*height: 25rem;*/
 }
 
+@media only screen and (max-width: 600px) {
+    .cover{
+        margin: auto;
+        width: 20rem;
+        height: 15rem;
+    }
+}
 
 .text{
-    /*margin-left: -1rem;*/
-    margin-top: 12.5rem;
+    margin-left: -5rem;
+    margin-top: 14.5rem;
     background: white;
     border: 1px solid white;
     width: 30rem;
-    height: 10rem;
+    height: 12rem;
     padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .text{
+        margin: auto;
+        width: 20rem;
+        height: 15rem;
+    }
+}
+
+ 
+
+@media only screen and (max-width: 600px) {
+    .container-cover{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
 }
 
 .creations{
     display: flex;
     flex-wrap: wrap;
     margin-left: 10rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .creations{
+        display: block;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: 0;
+    }
 }
 
 .crtn{
@@ -142,7 +181,7 @@ p{
     border: 1px solid black;
     background: black;
     /*padding: 5px;*/
-    height: 40vh;
+    height: 20vh;
     padding-right: 6rem;
     padding-left: 2rem;
 }
