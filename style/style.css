@@ -9,6 +9,18 @@ body{
     background: url(../assets/image-hero.jpg) no-repeat, center center fixed;
 }
 
+@media only screen and (max-width: 600px) {
+    .container {
+        background: url(../assets/image-hero.jpg) no-repeat, center center fixed;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        background: url(../assets/image-hero.jpg) no-repeat, center center fixed;
+    }
+}
+
 .main-nav {
     display: flex;
     list-style: none;
@@ -17,6 +29,13 @@ body{
 }
 
 @media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
     .main-nav {
         font-size: 0.5em;
         padding: 0;
@@ -52,8 +71,22 @@ a:hover{
 
 @media only screen and (max-width: 600px) {
     .word {
-        font-size: 0.5em;
+        display: flex;
+        align-items: center;
+        font-size: 1em;
+        margin: auto;
         padding: 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .word {
+
+         display: flex;
+        align-items: center;
+        font-size: 0.8em;
+        margin: auto;
+        padding: 0;    
     }
 }
 
@@ -83,6 +116,15 @@ p{
     text-align: left;
 }
 
+@media only screen and (max-width: 375px) {
+    p{
+        padding: 0;
+        font-size: 0.5em;
+        margin-left: 1em;
+       
+    }
+}
+
 
 .container-cover{
     display: flex;
@@ -106,14 +148,24 @@ p{
     }
 }
 
+@media only screen and (max-width: 375px) {
+    .cover{
+        margin: auto;
+        width: 20rem;
+        height: 15rem;
+    }
+}
+
 .text{
-    margin-left: -5rem;
-    margin-top: 14.5rem;
+    margin-left: -9rem;
+    margin-top: 12rem;
     background: white;
     border: 1px solid white;
     width: 30rem;
     height: 12rem;
-    padding: 20px;
+    padding: 40px;
+    padding-left: 60px;
+    padding-top: 60px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -124,7 +176,14 @@ p{
     }
 }
 
- 
+@media only screen and (max-width: 375px) {
+    .text {
+        width: 20rem;
+        height: 15rem;
+        margin-top: 2rem;
+        padding: 0;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .container-cover{
@@ -133,6 +192,15 @@ p{
         margin-bottom: 0;
     }
 }
+
+@media only screen and (max-width: 375px) {
+    .container-cover{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+}
+
 
 .creations{
     display: flex;
@@ -148,6 +216,17 @@ p{
         margin: auto 0;
         padding: 0;
         line-height: 4rem;
+      
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .creations{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin:  0;
+        padding: 0;
       
     }
 }
@@ -179,6 +258,7 @@ p{
     background: lightblue;
 }
 
+
 .img-container{
     margin-top: 3rem;
     margin-left: 4rem;
@@ -199,12 +279,16 @@ p{
     display: flex;
     align-items: end;
     padding: 10px;
-    padding-bottom: 10px;
+    padding-left: 25px;
     width: 220px;
     height: 400px;
     color: white;
     font-size: 1.5em;
     font-family: sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1em;
     border-radius: 10px;
 }
 
@@ -218,6 +302,14 @@ p{
 }
 
 @media only screen and (max-width: 600px) {
+    .pic{
+        display: grid;
+        grid-template-columns: 1fr;
+       
+    }
+}
+
+@media only screen and (max-width: 375px) {
     .pic{
         display: grid;
         grid-template-columns: 1fr;
@@ -265,6 +357,7 @@ p{
     cursor: pointer;
 }
 
+
 .footer-container{
     margin-top: 1.3rem;
     border: 1px solid black;
@@ -294,12 +387,28 @@ p{
    }
 }
 
+@media only screen and (max-width: 375px) {
+    .loopstudio {
+        margin: 0;
+   }
+}
+
 @media only screen and (max-width: 600px) {
     .icons-list {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+   }
+}
+
+@media only screen and (max-width: 375px) {
+    .icons-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
    }
 }
 
