@@ -267,11 +267,11 @@ p{
     
 }
 
+
 .img-container .imgs{
     display: grid;
     grid-gap: 1.5rem;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-template-rows: 1fr 1fr;
     padding: 0;
 }
 
@@ -301,21 +301,6 @@ p{
     transition: all 0.5s;
 }
 
-@media only screen and (max-width: 600px) {
-    .pic{
-        display: grid;
-        grid-template-columns: 1fr;
-       
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .pic{
-        display: grid;
-        grid-template-columns: 1fr;
-       
-    }
-}
 
 .one{
     background: url(../assets/image-curiosity.jpg) no-repeat;
